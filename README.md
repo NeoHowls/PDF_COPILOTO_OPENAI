@@ -83,7 +83,7 @@ Un sistema avanzado de análisis conversacional de documentos PDF que permite su
 ```bash
 # 1. Clonar repositorio
 git clone https://github.com/NeoHowls/PDF_COPILOTO_OPENAI.git
-cd pdf-copilot
+cd PDF_COPILOTO_OPENAI
 
 # 2. Configurar variables de entorno
 cp .env.example .env
