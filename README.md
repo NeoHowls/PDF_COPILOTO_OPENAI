@@ -198,6 +198,13 @@ Usuario → Clasificador → Procesador Específico → LLM → Respuesta
 - **Tablas complejas**: Formato puede perderse
 - **Documentos encriptados**: No soportados
 - **Formatos mixtos**: Solo PDFs
+### Errores
+- **Iniciar sin API key**: Da mensaje de error de _type
+- - **Solucion:** Iniciar con una API KEY
+
+- **Lectura de PDF sin creditos**: Si se quedan sin creditos durante o antes de la lectura del PDF dara un error generico de OpenIA o posibilidad que la conversacion de rompa.
+- - **Solucion:** Tener creditos en la cuenta o bien cambiar la API KEY
+
 
 ## Roadmap y Mejoras Futuras
 
