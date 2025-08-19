@@ -273,31 +273,31 @@ src/
 - **Docstrings**: Documentación clara y concisa
 - **Tests**: Cobertura mínima del 80%
 
-###Justificación de Elecciones Técnicas
+### Justificación de Elecciones Técnicas
 
 Este proyecto fue desarrollado de manera individual, lo que hizo necesario tomar decisiones técnicas que garantizaran simplicidad, escalabilidad y facilidad de mantenimiento.
 
-##Arquitectura y Diseño
+## Arquitectura y Diseño
 
 Se implementó una arquitectura modular basada en capas (UI, Orquestación y Servicios). Esta decisión permite mantener el sistema escalable, con componentes desacoplados y fáciles de probar. La inyección de dependencias asegura que cada módulo pueda evolucionar de forma independiente.
 
-##Vector Store
+## Vector Store
 
 Se seleccionó ChromaDB por su balance entre rendimiento y facilidad de despliegue. Al funcionar localmente evita problemas de latencia, es sencillo de integrar con Docker y soporta metadata y filtrado avanzado. Además, su compatibilidad directa con Sentence Transformers lo convierte en la mejor opción frente a alternativas externas como Pinecone o Weaviate.
 
-##Modelos de Lenguaje
+## Modelos de Lenguaje
 
 La integración de OpenAI y Anthropic responde a la necesidad de combinar distintas fortalezas. Esta elección asegura continuidad del servicio, permite optimizar costos según la naturaleza de la consulta y aprovecha las capacidades complementarias de cada proveedor.
 
-##Framework de Procesamiento
+## Framework de Procesamiento
 
 Se optó por LangChain como framework central porque abstrae la complejidad de trabajar con múltiples LLMs y ofrece herramientas específicas para RAG. Su comunidad activa y la integración nativa con embeddings y vector stores fueron factores clave.
 
-##Interfaz de Usuario
+## Interfaz de Usuario
 
 Se utilizó Streamlit para construir una interfaz rápida de implementar y fácil de desplegar. Esta herramienta evita la necesidad de desarrollar un frontend complejo y aporta componentes listos (chat, carga de archivos, visualizaciones) que agilizan el desarrollo individual.
 
-##Embeddings
+## Embeddings
 
 Se eligieron Sentence Transformers debido a la calidad de sus embeddings, su soporte multilingüe y la posibilidad de ejecutarlos localmente. Esto permite mayor control y elimina la dependencia de servicios externos para el procesamiento semántico.
 ## Soporte y Contacto
