@@ -86,7 +86,7 @@ git clone https://github.com/NeoHowls/PDF_COPILOTO_OPENAI.git
 cd PDF_COPILOTO_OPENAI
 
 # 2. Configurar variables de entorno
-cp .env.example .env
+start .env
 # Editar .env con tus API keys(Solo probado con OPENAI)
 
 # 3. Levantar servicios
